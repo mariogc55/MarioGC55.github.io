@@ -27,9 +27,9 @@ window.onscroll = () => {
             sec.classList.add('show-animate');
         }
         // if want to use animation that repeats on scroll use this
-        else {
-            sec.classList.remove('show-animate');
-        }
+        //else {
+        //    sec.classList.remove('show-animate');
+        //}
     });
 
     //sticky header
@@ -52,4 +52,30 @@ window.onscroll = () => {
 let submit = document.querySelector('.contact form .btn-box.btns .btn')
 submit.onclick = () => {
     alert("El servidor no esta en uso, utilizar el correo mariogc5555@gmail.com")
+}
+
+    //translate ES-EN
+
+    function setLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.innerText = el.getAttribute(`data-${lang}`);
+  });
+}
+
+
+function setLanguage(lang) {
+    const elements = document.querySelectorAll('[data-es], [data-en]');
+    elements.forEach(el => {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            const newText = el.getAttribute('data-' + lang);
+            if (newText) {
+                el.setAttribute('placeholder', newText);
+            }
+        } else {
+            const newText = el.getAttribute('data-' + lang);
+            if (newText) {
+                el.innerHTML = newText;
+            }
+        }
+    });
 }
