@@ -213,6 +213,82 @@ section {
     width: 100%;
 }
 
+
+/* //mark */
+
+.Language-btn {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 2rem;
+    width: 34.5rem;
+    height: 4rem;
+}
+
+.Language-btn .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.Language-btn .btn:hover {
+    color: var(--main-color);
+}
+
+.Language-btn .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.Language-btn .btn:nth-child(2):hover {
+    color: var(--bg-color);
+
+}
+
+.Language-btn .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.Language-btn .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.Language-btn .btn:hover::before {
+    width: 100%;
+}
+
+.Language-btn .btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.Language-btn.btns a::before {
+    color: var(--second-bg-color);
+}
+
+/* //mark */
+
 .home-sci {
     position: absolute;
     bottom: 4rem;
@@ -745,7 +821,8 @@ width: 5%;
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
-.home.show-animate .animate {
+.home.show-animate .animate,
+.home.show-animate .Language-btn .animate  {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
