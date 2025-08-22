@@ -823,7 +823,7 @@ width: 5%;
 #menu-icon .animate,
 .home.show-animate .animate,
 .home.show-animate .Language-btn .animate  {
-    animation: showRight 1s ease forwards;
+    animation: showRight .5s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
 
