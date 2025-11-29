@@ -1,6 +1,6 @@
 # MarioGC55.github.io
 
-
+This portfolio is gonna be updated soon
 
 - ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 - ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
