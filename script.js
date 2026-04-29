@@ -26,6 +26,7 @@ window.onscroll = () => {
             // active sections for animation on scroll
             sec.classList.add('show-animate');
         }
+        // i decided not to use that cause its unconfortable for the pages style but:
         // if want to use animation that repeats on scroll use this
         //else {
         //    sec.classList.remove('show-animate');
@@ -49,6 +50,7 @@ window.onscroll = () => {
 
 
     //alert submit text
+    // The section that used this was the comunication through mail contact, but it was removed from the page
 let submit = document.querySelector('.contact form .btn-box.btns .btn')
 submit.onclick = () => {
     alert("El servidor no esta en uso, utilizar el correo mariogc5555@gmail.com")
