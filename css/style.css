@@ -214,8 +214,6 @@ section {
 }
 
 
-/* //mark */
-
 .Language-btn {
     position: relative;
     display: flex;
@@ -286,8 +284,6 @@ section {
 .Language-btn.btns a::before {
     color: var(--second-bg-color);
 }
-
-/* //mark */
 
 .home-sci {
     position: absolute;
